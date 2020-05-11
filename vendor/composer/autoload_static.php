@@ -4,16 +4,12 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit2bcf1c834b610b416c039f4ec3ba2af4
+class ComposerStaticInit82f4704bf76a7a87b3a370f01ff74d2b
 {
     public static $prefixLengthsPsr4 = array (
         'F' => 
         array (
             'Fragen\\GitHub_Updater\\' => 22,
-        ),
-        'C' => 
-        array (
-            'Composer\\Installers\\' => 20,
         ),
     );
 
@@ -21,10 +17,6 @@ class ComposerStaticInit2bcf1c834b610b416c039f4ec3ba2af4
         'Fragen\\GitHub_Updater\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src/GitHub_Updater',
-        ),
-        'Composer\\Installers\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers',
         ),
     );
 
@@ -47,10 +39,10 @@ class ComposerStaticInit2bcf1c834b610b416c039f4ec3ba2af4
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit2bcf1c834b610b416c039f4ec3ba2af4::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit2bcf1c834b610b416c039f4ec3ba2af4::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInit2bcf1c834b610b416c039f4ec3ba2af4::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInit2bcf1c834b610b416c039f4ec3ba2af4::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit82f4704bf76a7a87b3a370f01ff74d2b::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit82f4704bf76a7a87b3a370f01ff74d2b::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit82f4704bf76a7a87b3a370f01ff74d2b::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInit82f4704bf76a7a87b3a370f01ff74d2b::$classMap;
 
         }, null, ClassLoader::class);
     }
